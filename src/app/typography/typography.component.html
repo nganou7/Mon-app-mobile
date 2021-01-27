@@ -1,0 +1,59 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Medecins</h4>
+                        <p class="card-category">Tableau</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                    <th>
+                                        ID
+                                    </th>
+                                    <th>
+                                        Nom
+                                    </th>
+                                    <th>
+                                        Prenom
+                                    </th>
+                                    <th>
+                                        Ville
+                                    </th>
+                                    
+                                </thead>
+                                <tbody *ngFor="let item of pat" >
+                                   
+                                    <tr *ngIf="item.role!='medecin'">
+                                        <td>
+                                            {{item.id}}
+                                          </td>
+                                          <td>
+                                            {{item.nom}}
+                                          </td>
+                                          <td>
+                                            {{item.prenom}}
+                                          </td>
+                                          <td>
+                                            {{item.ville}}
+                                          </td>
+                                          <td>
+                                            {{item.email}}
+                                          </td>
+                                          <td>
+                                            {{item.telephone}}
+                                          </td>
+                                          
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

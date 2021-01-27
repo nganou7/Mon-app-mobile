@@ -1,0 +1,71 @@
+<br>
+<br>
+<div>
+
+</div>
+<br>  
+<div class="container">
+    <div class="raw">
+      <div class="col-md-8">
+  <form novalidate #f="ngForm" (ngSubmit)="onregister(f.value)">
+    <div class="form-group">
+      <label><b>Nom</b></label>
+       <input type="text"  ngModel  name="nom" id="UserfirstName" class="form-control" >
+       <div class="invalid-feedback">
+       <span>Entrer votre Nom </span>
+    </div>
+       <label>Prenom</label>
+      <input type="text"   ngModel  name="prenom" id="UserlastName" class="form-control" required >
+      <div class="invalid-feedback">
+        <span >Entrer votre Prénom </span>
+     </div>
+      <label>Age </label>
+      <input type="number"  ngModel name="age" id="UserAge" class="form-control" required>
+      <div class="invalid-feedback">
+        <span >Entrer votre Age </span>
+     </div>
+      <label>Email </label>
+      <input type="email" ngModel name="email" id="UserEmail" placeholder="nganouespoir@yahoo.fr" class="form-control" >
+         
+      <label>Tel</label>
+      <input type="text" ngModel name="telephone" id="UserTel" class="form-control">
+      <label>Mot de Passe</label>
+      <input type="password" ngModel name="password" id="UserTel" class="form-control">
+      <label>Sexe :</label>
+      <input id="billing-no" type="radio" name="sexe" value="masculin" >M
+      <input id="billing-yes" type="radio" name="sexe" value="feminin"  >F
+      <br>
+      <label>Contact D'urgence</label>
+      <input type="text" ngModel name="numerourgence" id="UserContact" class="form-control">
+      <div class="invalid-feedback">
+        <span >Numéro d'urgence obligatoire </span>
+     </div>
+      <label>Ville</label>
+      <select ngModel name="Ville" class="form-control">
+        <option value="Douala">Douala</option>
+        <option value="Bafoussam">Bafoussam</option>
+        <option value="Maroua">Maroua</option>
+        <option value="Garoua">Garoua</option>
+        <option value="Yaoundé">Yaoundé</option>
+        <option value="Ngounderé">Ngounderé</option>
+      </select>
+        <label>Rôle</label>
+        <select ngModel name="role" class="form-control">
+          <option value="medecin">Médecin</option>
+          <option value="patient">Patient</option>
+        </select>
+        <label>Etat de Santé</label>
+      <select ngModel name="etat" class="form-control">
+        <option value="malade">Malade</option>
+        <option value="saint">Saint</option>
+        <option value="mort">Decédé</option>
+      </select>
+      <br>
+      <button class="btn btn-primary" type="submit">Enregistrer</button>
+      <button type="button" class="btn btn-danger" >Annuler</button>
+    </div>
+  </form>
+  </div>
+  </div>
+  <div>
+  </div>

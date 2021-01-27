@@ -1,0 +1,10 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% @theory: tpAgenda
+% @author: nganou
+% @date: Mon, 11 Jan 2021 10:40:02 GMT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+tpAgenda: THEORY
+  BEGIN 
+    abs(x: real): posreal = IF x > 0 THEN x ELSE -x ENDIF
+  END tpAgenda

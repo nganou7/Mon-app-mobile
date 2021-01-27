@@ -1,0 +1,9 @@
+.player{
+    text-align: center;
+    margin-top: 60px;
+  }
+  .player div{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
